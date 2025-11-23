@@ -1,0 +1,24 @@
+﻿<Window x:Class="UserWorks.Windows.User_authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserWorks.Windows"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="193.6" Width="274.4"
+        MinHeight="193.6"
+        MinWidth="274.4"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="5">
+            <TextBlock Text="Авторизация" HorizontalAlignment="Center"/>
+            <TextBlock Text="Логин" Padding="2"/>
+            <TextBox TextWrapping="Wrap" Text="Логин" Padding="2" x:Name="txb_authorization_login" GotFocus="txb_authorization_login_GotFocus" LostFocus="txb_authorization_login_LostFocus"/>
+            <TextBlock Text="Пароль" Padding="2"/>
+            <TextBox TextWrapping="Wrap" Text="Пароль" Padding="2" x:Name="txb_authorization_password" GotFocus="txb_authorization_password_GotFocus" LostFocus="txb_authorization_password_LostFocus"/>
+            <Button Content="Войти" Name="btn_authorization_auth" Click="btn_authorization_auth_Click"/>
+            <Button Content="Отмена" Name="btn_authorization_cancel" Click="btn_authorization_cancel_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

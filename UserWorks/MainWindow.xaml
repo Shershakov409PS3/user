@@ -1,0 +1,36 @@
+﻿<Window x:Class="UserWorks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserWorks"
+        mc:Ignorable="d"
+        Title="Пользователи" Height="360" Width="584"
+        WindowStartupLocation="CenterScreen"
+        Background="White"
+        MinHeight="360"
+        MinWidth="584">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Авторизация" Margin="0" x:Name="btn_Authorization" Click="btn_Authorization_Click"/>
+            <Button Grid.Column="1" Content="Регистрация" Margin="0" x:Name="btn_Registration" Click="btn_Registration_Click" IsEnabled="True"/>
+            <Button Grid.Column="2" Content="Bыйти" Margin="0" x:Name="btn_Exit" Click="btn_Exit_Click"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="5">
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Добро пожаловать" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Image Margin="5" Source="/Images/play-boy-Photoroom.png" Stretch="Fill"/>
+        </Grid>
+    </Grid>
+</Window>
